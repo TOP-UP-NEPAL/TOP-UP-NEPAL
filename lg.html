@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>LG CODE</title>
+    <style>
+            *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyfield{
+    display: flex;
+    align-items: center;
+    background-color: #212121;
+    border-radius: 5px;
+    
+}
+
+#link{
+    width: 100px;
+    padding: 12px 10px;
+    border: 1px solid #212121;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 19px;
+    overflow-x: scroll;
+}
+#link::-webkit-scrollbar{
+    display: none;
+}
+
+#copy-btn{
+    color: #fff;
+    padding: 0 20px;
+    font-size: 18px;
+    cursor: pointer;
+    filter: drop-shadow(0 .8rem 0.25rem rgba(0, 0, 0, 0.78));
+}
+a {
+        text-decoration: none;
+        margin: 50px;
+        color: #000000;
+        border: 1px solid #000000;
+        padding: 0.7rem 2rem;
+        font-size: 18px;
+        border-radius: 10px;
+        background: #FFFFFF;
+        filter: drop-shadow(0 .2rem 0.25rem rgba(0, 0, 0, 0.42));
+        
+}
+    </style>
+</head>
+<body>
+        <div class="copyfield">
+       <span id="link">3568</span>
+        <span id="copy-btn">Copy</span>
+    </div>
+    <a href="login.html">BACK</a>
+
+    <script>
+        var copybtn = document.getElementById("copy-btn");
+        var link = document.getElementById("link");
+
+        copybtn.onclick = function () {
+            navigator.clipboard.writeText(link.innerHTML);
+            copybtn.innerHTML = "Copied"
+            setTimeout(function (){
+                copybtn.innerHTML = "Copy"
+            }, 2000)
+        }
+        
+    </script>
+</html>

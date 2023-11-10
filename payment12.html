@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>payment</title>
+        <style>
+                body{
+                        text-align: center;
+                        font-family: 'courier' , Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                       
+
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  border: 1px solid #FFFFFFC7;
+
+                        
+                        
+                }
+                .payment {
+                        color: #D400FF;
+                        font-size: 20px;
+                        
+                }
+                form{
+                        
+                        margin: 23px;
+                        border-radius: 20px;
+                        filter: drop-shadow(0 .8rem 0.25rem rgba(222, 235, 228, 0.9));
+                        margin: -20px;
+                        
+                        
+                }
+                img{
+                        border-radius:
+                        20px;
+                        filter: drop-shadow(0 .8rem 0.25rem rgba(222, 235, 228, 0.9));
+                       
+                }
+                a {
+  padding: 0.6rem 1.6rem;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+a:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #000000,
+    #FFFD00,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #FF00A7,
+    #9500FF,
+    #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -2;
+  filter: blur(30px);
+  -webkit-filter: blur(10px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 10s linear infinite;
+  transition: opacity 0.1s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+a:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+input{
+        text-align: center;
+}
+button{
+  padding: 0.4rem 1rem;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+}
+
+button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #000000,
+    #FFFD00,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #FF00A7,
+    #9500FF,
+    #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -2;
+  filter: blur(30px);
+  -webkit-filter: blur(10px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 10s linear infinite;
+  transition: opacity 0.1s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+                
+                
+        </style>
+</head>
+<body>
+        <form action="send/index(12).html">
+                <b><div class="payment">Your Total Payment Rs 195/- </div><hr>
+                <img id="myimage" src="payment.png" width="200px" alt="seagull" ></hr></br><br><br>
+                <a href="https://khalti.com/">PAY KHALTI</a>
+                 <a href="https://esewa.com.np/">PAY ESEWA</a>
+                 <a href="https://www.imepay.com.np/#/">PAY IME</a>
+                 <br><br><br><input type="checkbox" required>Successful Payment</input>
+                 <input type="file" required></input>
+                 <br><br>
+              <button type="submit">NEXT STEPS</button>
+              <br><br>
+</b>
+</form>
+</body>
+</html>

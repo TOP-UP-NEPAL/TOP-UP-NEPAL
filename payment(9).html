@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>payment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<style>
+        body {
+  font-family: "Open Sans", sans-serif;
+  background: #F4F4F4;
+
+}
+.checkout__box {
+  padding: 20px;
+  background: #fff;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+}
+
+.checkout__box {
+  max-width: 400px;
+}
+.checkout__box .price {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 10px;
+}
+.checkout__box .price .reg_price.crossed {
+  color: #888;
+  text-decoration: line-through;
+  font-weight: 400;
+}
+.checkout__box h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.checkout__box hr {
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+}
+.checkout__box .checkout__opts .opt {
+  padding: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.checkout__box .checkout__opts .opt .radio_btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #bbb;
+  display: block;
+  position: relative;
+}
+.checkout__box .checkout__opts .opt.selected {
+  border: 2px solid black;
+}
+.checkout__box .checkout__opts .opt.selected .radio_btn {
+  border: 2px solid #3ab54b;
+}
+.checkout__box .checkout__opts .opt.selected .radio_btn:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  display: block;
+  position: absolute;
+  background: #3ab54b;
+  border-radius: 50%;
+  top: 3px;
+  right: 3px;
+}
+.checkout__box .checkout__opts .opt.opt2 {
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.checkout__box .checkout__opts .opt .lbl b {
+  color: #3ab54b;
+}
+.checkout__box .checkout__opts .opt .info-txt {
+  padding-left: 40px;
+  font-size: 12px;
+  padding-bottom: 15px;
+  padding-top: 6px;
+  color: #666;
+  font-style: italic;
+  padding-right: 15px;
+}
+.checkout__box .checkout__opts .gridme {
+  display: grid;
+  grid-template-columns: 30px 1fr 60px;
+  align-items: center;
+  padding: 0 15px;
+  color: black;
+}
+.checkout__box .checkout__opts .radio_price {
+  text-align: right;
+  font-size: 13px;
+}
+
+.checkout__btns {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 15px;
+}
+
+.checkout__btns .addtocart {
+  display: block;
+  border-radius: 4px;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  border: 1px solid #FFB600;
+  background-color: #FFB600;
+  height: 60px;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  cursor: pointer;
+  text-align: center;
+}
+.checkout__btns .addtocart:hover {
+  background-color: #3ab54b;
+  border-color: #3ab54b;
+  color: white;
+}
+a{
+        text-decoration: none;
+        color: white;
+}
+</style>
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="checkout__box">
+	<h4 class="price">
+		<span class="reg_price crossed">Click Add to Cart</span>
+		<span class="sub_price">Esewa & Khalti & Ime Pay</span>
+	</h4>
+
+	<hr>
+
+	<h3>Esewa & Ime Pay & <span class="sub-txt">Khalti</span></h3>
+
+	<div class="checkout__opts">
+
+		<div class="opt opt1" data-rel="1" data-price="39.00">
+			<div class="gridme">
+				<div class="radio">
+					<span class="radio_btn"></span>
+				</div>
+				<div class="lbl">Total Payment</div>
+				<div class="radio_price">1,450 Rs/-</div>
+			</div>
+		</div>
+
+		
+
+	<div class="checkout__btns">
+
+		<div class="quan_sel">
+			<div>
+				
+		<div class="cart_btn">
+			<button type="button" class="btn addtocart"><a href="payment9.html">Add to Cart</a></button>
+		</div>
+
+	</div>
+
+	
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script>
+          $(document).ready(function () {
+	$(".opt").on("click", function () {
+		// Remove all instances of selected
+		$(".opt").removeClass("selected");
+		// collect information to pass to form
+		var rel = $(this).data("rel");
+		var pri = $(this).data("price");
+
+		//add class to selected
+		$('[data-rel="' + rel + '"]').addClass("selected");
+
+		// Update the hidden form
+		$("#in_opt").val(rel);
+		$("#in_total").val(pri);
+
+		// Update the pricing at top
+		if (rel == 1) {
+			$(".reg_price").removeClass("crossed");
+			$(".sub_price").hide();
+		} else {
+			$(".reg_price").addClass("crossed");
+			$(".sub_price").show();
+		}
+	});
+
+	$(".freq_drop").on("click", function () {
+		$(".dropout").slideToggle();
+	});
+
+	$(".freq_opt").on("click", function () {
+		var txt = $("b", this).html();
+		var rel = $(this).data("rel");
+		$(".freq_selected b").html(txt);
+		$("#in_freq").val(rel);
+	});
+
+	$("#sel_q").on("change", function () {
+		var quan = $("#sel_q option:selected").val();
+		$("#in_quan").val(quan);
+		console.log(quan);
+	});
+});
+  </script>
+
+</body>
+</html>

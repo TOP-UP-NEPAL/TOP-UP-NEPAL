@@ -1,0 +1,428 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>payment</title>
+        <style>
+                body{
+                        text-align: center;
+                        font-family: 'courier' , Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                       
+
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  border: 1px solid #FFFFFFC7;
+
+                        
+                        
+                }
+                .payment {
+                        color: #D400FF;
+                        font-size: 20px;
+                        
+                }
+                form{
+                        
+                        margin: 23px;
+                        border-radius: 20px;
+                        filter: drop-shadow(0 .8rem 0.25rem rgba(222, 235, 228, 0.9));
+                        margin: -20px;
+                        
+                        
+                }
+                img{
+                        border-radius:
+                        20px;
+                        filter: drop-shadow(0 .8rem 0.25rem rgba(222, 235, 228, 0.9));
+                       
+                }
+                a {
+  padding: 0.6rem 1.6rem;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+a:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #000000,
+    #FFFD00,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #FF00A7,
+    #9500FF,
+    #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -2;
+  filter: blur(30px);
+  -webkit-filter: blur(10px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 10s linear infinite;
+  transition: opacity 0.1s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+a:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+input{
+        text-align: center;
+}
+button{
+  padding: 0.4rem 1rem;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+}
+
+button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #000000,
+    #FFFD00,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #FF00A7,
+    #9500FF,
+    #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -2;
+  filter: blur(30px);
+  -webkit-filter: blur(10px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 10s linear infinite;
+  transition: opacity 0.1s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+                
+                
+        </style>
+</head>
+<body>
+        <form action="send/index(17).html">
+                <b><div class="payment">Your Total Payment Rs 1,799/- </div><hr><!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOP-UP DAIMOND</title>
+    <style>
+      * {
+
+  margin: 0;
+
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+  background: #000000;
+  
+}
+
+.container {
+  position: fixed;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  border: 1px solid #FFFFFFC7;
+}
+
+h2 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+  border-bottom: 2px solid #fff;
+}
+
+.input-box label {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 5px;
+  font-size: 17px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input-box textarea,
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  outline: none;
+}
+
+.input-box textarea {
+  padding: 15px 0;
+  resize: none;
+}
+
+.input-box textarea:focus ~ label,
+.input-box textarea:valid ~ label,
+.input-box input:valid ~ label,
+.input-box input:focus ~ label {
+  top: -15px;
+}
+
+.btn {
+  padding: 0.9rem 10rem;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 15px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 10pt;
+  text-align: center;
+  align-items: center;
+}
+
+.btn:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #FF00A7,
+    #9500FF,
+    #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -2;
+  filter: blur(30px);
+  -webkit-filter: blur(10px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 10s linear infinite;
+  transition: opacity 0.1s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.btn:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+p{
+  color: #FF0000;
+  font-size: 15px;
+}
+    </style>
+  </head>
+  <body>
+<!-- modify this form HTML and place wherever you want your form -->
+<form class="container" id="my-form" action="https://formspree.io/f/maygkrwl" method="POST">
+
+       <p id="my-form-status"></p>
+      <h2>BISHAL TOP-UP CENTRE</h2>
+      <div class="input-box">
+        <input type="text" name="FF NAME" required />
+        <label for="">Enter Your Correct Free Fire NAME...</label>
+      </div>
+
+      <div class="input-box">
+        <input type="number" name="UID" required />
+        <label for="">Enter Your Correct Free Fire UID...</label>
+      </div>
+
+      <div class="input-box">
+        <input  name="Monthly Membership" value="Monthly Membership"></input>
+        <label for=""></label>
+      </div>
+            <div class="input-box">
+
+        <input type="number" name="PHONE NUMBER" required />
+
+        <label for="">Enter Your Valid Phone Number...</label>
+      </div>
+  <b><button class="btn" id="my-form-button">SUBMIT</button></b>
+
+  
+</form>
+<!-- Place this script at the end of the body tag -->
+<script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Hi Uesr Your Order Monthly Membership Has Successful Sent Please Wait 30 Minutes<br>Topup Successful To Message Your Phone Number<br>Thank you";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! App Updating Process Please Download New Version to Topup Now"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! network connection failed please check your network to try top up"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+    window.onload = function() { 
+  var el = document.getElementById('g-recaptcha-response'); 
+  if (el) { 
+    el.setAttribute('required', 'required'); 
+  } 
+}
+</script>
+    
+  </body>
+</html>
+
+                <img id="myimage" src="payment.png" width="200px" alt="seagull" ></hr></br><br><br>
+                <a href="https://khalti.com/">PAY KHALTI</a>
+                 <a href="https://esewa.com.np/">PAY ESEWA</a>
+                 <a href="https://www.imepay.com.np/#/">PAY IME</a>
+                 <br><br><br><input type="checkbox" required>Successful Payment</input>
+                 <input type="file" required></input>
+                 <br><br>
+              <button type="submit">NEXT STEPS</button>
+              <br><br>
+</b>
+</form>
+</body>
+</html>
